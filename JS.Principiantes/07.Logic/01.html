@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript: Logic</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*
+             * Quiero irme de viaje, ¿tengo suficiente dinero?
+             * Sí, me voy de viaje.
+             * Sí, pero tengo un presupuesto ajustado.
+             * No, tengo que seguir ahorrando.
+            */
+            const flight = 100;
+            const hotel = 50;
+            const tour = 30;
+            const total = flight + hotel + tour;
+            const budget = 180;
+
+            if (budget > total) {
+                console.log('Sí, me voy de viaje.')
+                console.log('Tengo ' + budget + '€.')
+            } else if (budget === total) {
+                console.log('Sí, pero tengo un presupuesto ajustado')
+                console.log('Tengo exactamente ' + budget + '€.')
+            } else {
+                console.log('No, tengo que seguir ahorrando.')
+                console.log('Tengo sólo ' + budget + '€.')
+            }
+        </script>
+    </body>
+</html>

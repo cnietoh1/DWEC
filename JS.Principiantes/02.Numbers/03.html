@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript: Numbers</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+         * Móvil (300€) + Cascos (30€) + Funda (10€)
+         * Descueto 10%
+        */
+        const PRICE_MOBILE = 300;
+        const PRICE_HEADPHONES = 30;
+        const PRICE_CASE = 10;
+        const DISCOUNT = 10;
+        const TOTAL = PRICE_MOBILE + PRICE_HEADPHONES + PRICE_CASE;
+        const DISCOUNT_TOTAL = TOTAL * DISCOUNT / 100;
+        const SUBTOTAL = TOTAL - DISCOUNT_TOTAL;
+        console.log(SUBTOTAL)
+    </script>
+</body>
+</html>

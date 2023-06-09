@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Strings</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+         * Es el momento de gestinar cadenas de texto
+        */
+        // concatenar texto
+        console.log('Hello' + ' World')
+        // template literals
+        const name = 'Carlos'
+        console.log('Hello ' + name)
+        // typeof
+        console.log(typeof name)
+        // .length
+        console.log(name.length)
+        // .includes()
+        console.log(name.includes('Ca')) // true
+        console.log(name.includes('Di')) // false
+        // .slice(start, end)
+        console.log(name.slice(2, 3)) // r
+        // .replace('este texto', 'por este otro')
+        console.log(name.replace('los', 'pa'))
+        // .trim()
+        const text = '   faf fafae f fde eerer '
+        console.log(text.trim())
+        // .split(',')
+        const geoLocation = 'Calle whatever, 7, 1D'
+        console.log(geoLocation.split(','))
+
+    </script>
+</body>
+</html>

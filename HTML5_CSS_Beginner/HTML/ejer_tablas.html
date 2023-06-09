@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio práctico con tablas</title>
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+    
+    <table style="width: 70%;">
+        <tr style="text-align: center;">
+          <td><p></p></td>
+          <td colspan="3"><img src="../IMG/120_ipod.png" width="100px" height="100px"/></td>
+          <td colspan="2"><img src="../IMG/100_ipod.png" width="100px" height="100px"/></td>
+        </tr>
+        <tr>
+          <th style="padding-top: 10px; padding-bottom: 10px;">Capacidad</th>
+          <td style="padding-left: 10px;">2GB</td>
+          <td style="padding-left: 10px;">4GB</td>
+          <td style="padding-left: 10px;">8GB</td>
+          <td style="padding-left: 10px;">32GB</td>
+          <td style="padding-left: 10px;">2GB</td>
+        </tr>
+        <tr>
+          <th>Colores</th>
+          <th>Blanco</th>
+          <td>
+            <ul style="list-style-type:disc;">
+                <li>Negro</li>
+                <li>Rosa</li>
+                <li>Dorado</li>
+            </ul>
+          </td>
+          <th>Negro</th>
+          <td colspan="2">
+            <ul style="list-style-type:disc;">
+                <li>Negro</li>
+                <li>Blanco</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th style="padding-top: 8px; padding-bottom: 8px;">Pantalla</th>
+          <th colspan="3">3 pulgadas</th>
+          <th colspan="2">7 pulgadas</th>
+        </tr>
+        <tr>
+          <th rowspan="2" style="padding-top: 20px; padding-bottom: 20px;">Tiempo de carga</th>
+          <th rowspan="2"; colspan="3">1 hora</th>
+          <th colspan="2">5 horas</th>
+        </tr>
+        <tr>
+            <th colspan="2">30 minutos para 75%</th>
+        </tr>
+    </table>
+</body>
+</html>

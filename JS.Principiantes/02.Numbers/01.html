@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Numbers</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        // typeof
+        let num1 = 20
+        let num2 = '20'
+        console.log(typeof num1) // Number
+        console.log(typeof num2) // String
+        // NaN
+        const notNumber = 2 + 'adsfa'
+        console.log(typeof notNumber)
+        // isNaN()
+        console.log(isNaN(NaN))
+        console.log(isNaN('whatever'))
+        console.log(isNaN('12'))
+        console.log(isNaN(12))
+        // .toString()
+        let number = 100.1473432
+        console.log(typeof number)
+        console.log(typeof number.toString())
+        // .toFixed()
+        console.log(number.toFixed(2)) // decimales con redondeo
+
+    </script>
+</body>
+</html>

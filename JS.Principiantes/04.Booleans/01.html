@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript: Booleans</title>
+</head>
+<body>
+    <p class="block-text"></p>
+    <script type="text/javascript">
+        /*
+         * Mostrar una información al usuario dependiendo de si está conectado o no.
+         * 
+         * Mensaje si NO está conectado: Debes registrarte para leer este artículo
+         * Mensaje SI está conectado: Haz click aquí para ver el contenido.
+        */
+        const USER_LOGGED = true;
+        const BLOCK_TEXT = document.querySelector('.block-text')
+
+        if(USER_LOGGED) {
+            BLOCK_TEXT.innerHTML = 'Haz click aquí para ver el contenido.'
+        } else {
+            BLOCK_TEXT.innerHTML = 'Debes registrarte para leer este artículo.'
+        }
+
+    </script>
+</body>
+</html>
