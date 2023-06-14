@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        #mi_id_prueba {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Mi primera clase práctica de DOM</p>
+
+    <script type="text/javascript">
+        
+        /*var parrafo = document.getElementById("parrafo");
+        console.log(parrafo.innerText); // innerText accede al contenido de ese nodo, es decir lo de dentro de las etiquetas.
+    */
+        var parrafo2 = document.getElementsByTagName('p');
+        console.log(parrafo2);
+
+        parrafo2[0].id = 'mi_id_prueba';
+
+        parrafo2[0].style.color = 'blue';
+        parrafo2[0].style.backgroundColor = 'yellow';
+    </script>
+</body>
+</html>
