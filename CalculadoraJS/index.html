@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora con JavaScript</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+                margin: 50px;
+                background-color: #f5f5f5;
+            }
+
+            #calculadora {
+                width: 200px;
+                margin: 0 auto;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+            }
+
+            h1 {
+                font-size: 24px;
+                color: #4caf50;
+                margin-bottom: 20px;
+                text-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+            }
+
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            button {
+                width: 35px;
+                height: 35px;
+                margin: 5px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            button.operador {
+                background-color: #f60;
+                color: #fff;
+            }
+
+            button.igual {
+                background-color: #4caf50;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CALCULADORA</h1>
+        <div id="calculadora">
+            
+            <input type="text" id="pantalla" disabled>
+            <br>
+            <button onclick="agregarAPantalla('1')">1</button>
+            <button onclick="agregarAPantalla('2')">2</button>
+            <button onclick="agregarAPantalla('3')">3</button>
+            <button class="operador" onclick="agregarAPantalla('+')">+</button>
+            <br>
+            <button onclick="agregarAPantalla('4')">4</button>
+            <button onclick="agregarAPantalla('5')">5</button>
+            <button onclick="agregarAPantalla('6')">6</button>
+            <button class="operador" onclick="agregarAPantalla('-')">-</button>
+            <br>
+            <button onclick="agregarAPantalla('7')">7</button>
+            <button onclick="agregarAPantalla('8')">8</button>
+            <button onclick="agregarAPantalla('9')">9</button>
+            <button class="operador" onclick="agregarAPantalla('*')">*</button>
+            <br>
+            <button onclick="agregarAPantalla('0')">0</button>
+            <button onclick="limpiarPantalla()">C</button>
+            <button class="igual" onclick="calcular()">=</button>
+            <button class="operador" onclick="agregarAPantalla('/')">/</button>
+        </div>
+
+    <script src="index.js"></script>
+
+    </body>
+</html>
